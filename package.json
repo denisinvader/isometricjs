@@ -1,7 +1,7 @@
 {
-  "name": "transformjs",
+  "name": "isometricjs",
   "version": "1.0.0",
-  "main": "transformjs.min.js",
+  "main": "isometricjs.min.js",
   "license": "MIT",
   "scripts": {
     "build": "cross-env BABEL_ENV=build node build"

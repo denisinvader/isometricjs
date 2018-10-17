@@ -10,7 +10,7 @@ async function build(option) {
   try {
     build(configFactory({
       input: './src/index.js',
-      fileName: './transformjs.min.js'
+      fileName: './isometricjs.min.js'
     }))
   } catch (e) {
     console.error(e)
