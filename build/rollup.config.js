@@ -20,9 +20,9 @@ module.exports = (config) => {
     output: {
       file: fileName,
       format: 'umd',
-      name: name || 'isometricjs',
+      name: name || 'transform',
       globals: {
-        isometricjs: 'isometricjs'
+        transform: 'transform'
       }
     }
   }
