@@ -25,6 +25,24 @@ export const rotateZ = a => ([
   [0, 0, 1],
 ]);
 
+export const translateX = dx => ([
+  [1, 0, dx],
+  [0, 1, 0],
+  [0, 0, 0]
+]);
+
+export const translateY = dy => ([
+  [1, 0, 0],
+  [0, 1, dy],
+  [0, 0, 0]
+]);
+
+export const translate = (dx, dy) => ([
+  [1, 0, dx],
+  [0, 1, dy],
+  [0, 0, 0]
+]);
+
 export const isometricLeft = multiplyMatrices(
   rotateX(isometricAngleX),
   rotateY(isometricAngleY)
