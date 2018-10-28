@@ -8,7 +8,7 @@ module.exports = (config) => {
     input: {
       input,
       external: [
-        'dayjs'
+        'isometricjs'
       ],
       plugins: [
         babel({
@@ -20,9 +20,9 @@ module.exports = (config) => {
     output: {
       file: fileName,
       format: 'umd',
-      name: name || 'transform',
+      name: name || 'isometricjs',
       globals: {
-        transform: 'transform'
+        isometricjs: 'isometricjs'
       }
     }
   }
