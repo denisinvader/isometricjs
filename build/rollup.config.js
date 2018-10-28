@@ -14,15 +14,15 @@ module.exports = (config) => {
         babel({
           exclude: 'node_modules/**'
         }),
-        // uglify()
+        uglify()
       ]
     },
     output: {
       file: fileName,
       format: 'umd',
-      name: name || 'svg-transforms',
+      name: name || 'transform',
       globals: {
-        svgTransforms: 'svg-transforms'
+        transform: 'transform'
       }
     }
   }
