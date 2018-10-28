@@ -1,6 +1,6 @@
 {
   "name": "isometricjs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "isometricjs.min.js",
   "license": "MIT",
   "scripts": {
