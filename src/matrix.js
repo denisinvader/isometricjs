@@ -1,3 +1,5 @@
+const MATRIX_SIZE = 3;
+
 export const normalizedMatrix = [
   [1, 0, 0],
   [0, 1, 0],
@@ -5,23 +7,17 @@ export const normalizedMatrix = [
 ];
 
 export function multiplyMatrices (matrixA, matrixB) {
-  const matrixC = [];
+  const matrixC = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0],
+  ];
 
-  const l = matrixA.length;
-  const m = matrixA[0].length;
-  const n = matrixB.length;
-
-  for (let i = 0; i < l; i++) {
-    matrixC.push([]);
-
-    for (let j = 0; j < n; j++) {
-      let c = 0;
-
-      for (let r = 0; r < m; r++) {
-        c += matrixA[i][r] * matrixB[r][j];
+  for (let i = 0; i < MATRIX_SIZE; i++) {
+    for (let j = 0; j < MATRIX_SIZE; j++) {
+      for (let k = 0; k < MATRIX_SIZE; k++) {
+        matrixC[i][j] += matrixA[i][k] * matrixB[k][j];
       }
-
-      matrixC[i].push(c);
     }
   }
 
