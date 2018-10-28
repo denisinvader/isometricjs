@@ -9,7 +9,7 @@ export default function (_) {
 
   transform.add = _ => (matrix = multiplyMatrices(matrix, _), transform);
 
-  transform.toString = () => matrixToString(matrix);
+  transform.toString = () => `matrix(${matrixToString(matrix)})`;
 
   return transform;
 };
